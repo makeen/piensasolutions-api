@@ -31,5 +31,9 @@ if (!count(debug_backtrace()))
 	$api = new PiensaSolutionsApi();
 	assert($api->checkDomain('akjsdhdkasddkjah', 'com') === true, 'Domain akjsdhdkasddkjah.com expected free');
 	assert($api->checkDomain('google', 'com') === false, 'Domain google.com expected not-free');
+	try {
+		$api->checkDomain('google', 'nonexistent');
+		assert(false, 'Expected exception was not thrown');
+	} catch (Exception $ignored) {}
 }
 
