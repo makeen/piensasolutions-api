@@ -12,9 +12,10 @@ Ugly code might appear here. Don't blame me!
 DONE
 ====
 - Method to check domain availability
+- Login method
+- Method to query for all registered domains
 
 WANTED
 ======
 - Method to register a new domain for a given account
 - Method to update already registered domain DNS
-- Method to query for all registered domains
