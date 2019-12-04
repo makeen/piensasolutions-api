@@ -1,0 +1,8 @@
+{
+    "name": "makeen/piensasolutions-api",
+    "autoload": {
+        "psr-0": {
+            "NS_": "php/src/"
+        }
+    }
+}
